@@ -9,7 +9,6 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: #f9fafb;
-  height: 100vh;
   padding: 0;
 }
 
@@ -29,6 +28,7 @@ ul {
   display: flex;
   justify-content: flex-end;
   font-size: 18px;
+  gap: 10px;
 }
 
 .logo {
@@ -54,11 +54,24 @@ ul {
 .hero .text {
   flex: 1;
 }
+.hero h1 {
+  font-size: 48px;
+}
 
 .hero img {
-  flex: 1 0 auto;
-  width: 200px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 300px;
   height: auto;
+}
+
+button {
+  padding: 5px 20px;
+  background-color: #3b82f6;
+  color: #e5e7eb;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
 }
 
 .info {
@@ -67,18 +80,56 @@ ul {
   display: flex;
   flex-direction: column;
   color: #1f2937;
+  justify-content: center;
+}
+
+.info h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  align-self: center;
 }
 
 .container {
   display: flex;
   gap: 20px;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  flex: 0;
+}
+
+.card img {
+  flex: 0;
+  flex-shrink: 0;
+  max-width: 200px;
+}
+
+.card p {
+  text-align: center;
 }
 
 .quote {
   background-color: #e5e7eb;
   flex: 1;
   color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote p {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+}
+.quote h3 {
+  font-size: 24px;
 }
 
 .action {

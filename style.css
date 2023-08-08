@@ -1,14 +1,22 @@
 * {
-  border: 1px solid red;
+  border: 1px red;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background-color: rgb(26, 26, 26);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: #f9fafb;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
   padding: 0;
 }
 
@@ -28,7 +36,7 @@ ul {
   display: flex;
   justify-content: flex-end;
   font-size: 18px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .logo {
@@ -48,7 +56,7 @@ ul {
   flex: 1;
   display: flex;
   justify-content: space-between;
-  padding: 5vw;
+  padding: 5vh 5vw;
   gap: 20px;
 }
 
@@ -57,16 +65,16 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 15px;
 }
 .hero h1 {
   font-size: 48px;
 }
 
 .hero img {
-  flex-shrink: 0;
-  flex-grow: 0;
-  width: 300px;
-  height: auto;
+  flex-shrink: 1;
+  flex-grow: 1;
+  max-height: 30vh;
 }
 
 button {
@@ -143,6 +151,8 @@ button {
   flex: 1;
   display: flex;
   margin: 5vw;
+  width: 90vw;
+  height: 10vh;
 }
 
 .footer {
